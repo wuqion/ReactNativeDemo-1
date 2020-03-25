@@ -1,0 +1,10 @@
+{
+  "name": "demo",
+  "displayName": "demo",
+  "expo": {
+    "slug": "demo",
+    "name": "demo",
+    "sdkVersion": "37.0.0",
+    "entryPoint": ".vscode\\exponentIndex.js"
+  }
+}
