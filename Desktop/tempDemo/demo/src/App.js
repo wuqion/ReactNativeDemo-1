@@ -9,22 +9,21 @@
 import React from 'react';
 import {
   View,
-  Text
+  Text,
+  
 } from 'react-native';
 
 import 'react-native-gesture-handler';
 import BaseTabNavigator from './BaseTabNavigator';
 
+
 const App: () => React$Node = () => {
   return (
-   <View style={{flex:1}}>
-     {/* <Text>dddsssssss</Text>
-     <Text>dddsssssss</Text>
-     <Text>dddsssssss</Text>
-     <Text>dddsssssss</Text>
-     <Text>dddsssssss</Text> */}
-     <BaseTabNavigator></BaseTabNavigator>
-   </View>
+    <View style={{ flex: 1 }}>
+      {/* <Text>dddsssssss</Text> */}
+
+      <BaseTabNavigator/>
+    </View>
   );
 };
 

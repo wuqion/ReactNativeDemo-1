@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, Button, Alert, NativeModules} from 'react-native';
+import {View, Button, NativeModules, Platform} from 'react-native';
 
 export default class CenterScreen extends React.Component {
   constructor() {
@@ -12,21 +12,25 @@ export default class CenterScreen extends React.Component {
     return (
       <View>
         <Button
-          title="跳转首页"
+          title="跳转二级详情"
           onPress={() => {
-            this.props.navigation.navigate('Home');
+            this.props.navigation.navigate('FindScreens');
           }}
         />
         <Button
-          title="跳转原生页"
+          title="跳转原生页面"
           onPress={() => {
-            NativeModules.testAndroid.startActivity('dd');
+            if (!(Platform.OS == 'web')) {
+              NativeModules.testAndroid.startActivity('dd');
+            }
           }}
         />
         <Button
           title="分享"
           onPress={() => {
-            NativeModules.testAndroid.showShare();
+            if (!(Platform.OS == 'web')) {
+              NativeModules.testAndroid.showShare();
+            }
           }}
         />
       </View>

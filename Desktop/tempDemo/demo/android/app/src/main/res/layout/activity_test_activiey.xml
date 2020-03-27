@@ -10,7 +10,7 @@
     <TextView
         android:id="@+id/back"
         android:gravity="center"
-        android:text="原生界面，点击返回ReactNative页"
+        android:text="原生界面逻辑"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 </LinearLayout>
